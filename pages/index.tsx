@@ -1,6 +1,10 @@
+import Footer from "@/comps/Footer";
+import Navbar from "@/comps/Navbar";
+
 export default function Home() {
   return (
     <div>
+      <Navbar />
       <h1>Homepage</h1>
       <p>
         Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
@@ -28,6 +32,7 @@ export default function Home() {
         Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa
         et culpa duis.
       </p>
+      <Footer />
     </div>
   );
 }
