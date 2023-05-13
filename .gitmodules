@@ -1,0 +1,3 @@
+[submodule "nextjs-tutorial"]
+	path = nextjs-tutorial
+	url = https://github.com/iamshaunjp/nextjs-tutorial
