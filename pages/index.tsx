@@ -1,13 +1,11 @@
-import Footer from "@/comps/Footer";
-import Navbar from "@/comps/Navbar";
+import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
-      <h1>Homepage</h1>
-      <p>
+      <h1 className={styles.title}>Homepage</h1>
+      <p className={styles.text}>
         Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
         enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
         exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit
@@ -20,7 +18,7 @@ export default function Home() {
         Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa
         et culpa duis.
       </p>
-      <p>
+      <p className={styles.text}>
         Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
         enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
         exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit
@@ -33,8 +31,9 @@ export default function Home() {
         Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa
         et culpa duis.
       </p>
-      <Link href="/ninjas">See Ninja Listing</Link>
-      <Footer />
+      <Link href="/ninjas" className={styles.btn}>
+        See Ninja Listing
+      </Link>
     </div>
   );
 }
