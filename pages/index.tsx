@@ -1,5 +1,6 @@
 import Footer from "@/comps/Footer";
 import Navbar from "@/comps/Navbar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
         Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa
         et culpa duis.
       </p>
+      <Link href="/ninjas">See Ninja Listing</Link>
       <Footer />
     </div>
   );
