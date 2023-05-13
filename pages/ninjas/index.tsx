@@ -7,11 +7,11 @@ export const getStaticProps = async () => {
   return { props: { ninjas: data } };
 };
 
-export default function Ninjas({ ninjas }) {
+export default function Ninjas({ ninjas }: { ninjas: any }) {
   return (
     <div>
       <h1>All Ninjas</h1>
-      {ninjas.map((ninja) => (
+      {ninjas.map((ninja: any) => (
         <div key={ninja.id}>
           <Link href={"/ninjas/" + ninja.id} className={styles.single}>
             <h3>{ninja.name}</h3>
